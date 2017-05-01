@@ -1,0 +1,114 @@
+.main-container {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+ display: inline-flex;
+ align-items: center;
+ width: 100%;
+ justify-content: space-between;
+}
+
+a {
+  color: black;
+}
+
+.connect {
+  display: table-footer-group;
+  text-align: -webkit-center;
+}
+
+.connect-row {
+   align-items: center;
+   display: flex;
+   justify-content: space-around;
+   width: 300px;
+   padding: 0px;
+   height: 50px;
+   list-style: none;
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+}
+
+#header-img {
+  background-image:url('http://sfcitizen.com/blog/wp-content/uploads/2014/09/7J7C6571-copy.jpg');
+  height: 25%;
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
+  display: table;
+}
+
+@media (max-width: 400px) {
+  #header-img {
+    height: 35%
+  }
+}
+
+#name {
+  font-size: 4em;
+  color: black;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px olive;
+  top: 40px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (max-width: 700px) {
+  #name {
+    font-size: 3em;
+  }
+}
+
+.tab-link {
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .tab-link {
+    font-size: .75em !important;
+    font-weight: bolder !important;
+  }
+}
+
+.black-divider {
+  border-left-color: black;
+}
+
+.mui-divider {
+  background-color: black;
+}
+
+#resume {
+  height: 800px;
+  width: 800px;
+}
+
+.hello {
+  text-align: center;
+  text-shadow: 2px 2px olive;
+  font-weight: bolder;
+  font-family: 'Roboto';
+  font-size: 30px;
+}
+
+.intro {
+  font-family: 'Roboto';
+  font-size: 20px;
+  text-align: center;
+}
+
+#profile {
+  height: 250px;
+  width: 250px;
+  display: block;
+  align-self: center;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
