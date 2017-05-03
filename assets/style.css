@@ -119,8 +119,8 @@ a {
 }*/
 
 #screenshot {
-  width: 400px;
-  height: 250px;
+  width: calc(45vw - 150px);
+  height: calc(45vh - 100px);
   align-self: center;
   border: 2px solid gray;
   border-bottom: none;
@@ -134,6 +134,15 @@ a {
 #screenshot:hover{
   cursor: crosshair;
   transition: all .5s ease-in-out;
-  width: 75vw;
+  width: 50vw;
   height: auto;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 45vw;
+  height: 45vh;
+  margin: 0 auto;
 }
