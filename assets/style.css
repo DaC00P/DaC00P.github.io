@@ -113,3 +113,27 @@ a {
   margin: 0 auto;
   padding-top: 10px;
 }
+
+/*.screenshots {
+  align-items: center;
+}*/
+
+#screenshot {
+  width: 400px;
+  height: 250px;
+  align-self: center;
+  border: 2px solid gray;
+  border-bottom: none;
+  margin-bottom: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: all .2s ease-in-out;
+}
+
+#screenshot:hover{
+  cursor: crosshair;
+  transition: all .5s ease-in-out;
+  width: 75vw;
+  height: auto;
+}

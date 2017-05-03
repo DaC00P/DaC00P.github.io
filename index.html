@@ -9,6 +9,8 @@
     <link href="./assets/style.css" rel="stylesheet" type="text/css" />
     <script src="https://use.fontawesome.com/d57adc964d.js"></script>
     <script src="https://cdn.muicss.com/mui-0.9.15/js/mui.min.js"></script>
+    <link rel="stylesheet" href="assets/gallery.theme.css">
+    <!-- <link rel="stylesheet" href="css/gallery.min.css"> -->
   </head>
 
     <header>
@@ -99,6 +101,27 @@
             <li>Utilized scopes & SQL queries to create an active search based on a PostgreSQL text search.</li>
             <li>Integrated Google Maps API as an interactive component that functions as a location-based filter.</li>
           </ul>
+          <div class="gallery autoplay items-2">
+            <div id="item-1" class="control-operator"></div>
+            <div id="item-2" class="control-operator"></div>
+
+            <figure class="item">
+                <img id='screenshot' src='./assets/chefstable_ex_2.png' />
+            </figure>
+
+            <figure class="item">
+              <img id='screenshot' src='./assets/chefstable_ex_1.png' />
+            </figure>
+
+            <div class="controls">
+              <a href="#item-1" class="control-button">•</a>
+              <a href="#item-2" class="control-button">•</a>
+            </div>
+          </div>
+          <!-- <div class="screenshots">
+
+
+          </div> -->
         <div class="mui-divider"></div>
         <span>Benchmarker  &nbsp;</span>
         <span class="mui--divider-left black-divider">&nbsp; Node.js, React.js, Virtual Machines</span></span>
@@ -123,6 +146,7 @@
       <div class="mui-tabs__pane" id="pane-justified-3">
         <object data="./assets/Daniel Cuperman - Resume - 42017.pdf" width="100%" height="600" type='application/pdf'>
           <p>Sorry, the PDF couldn't be displayed :(</p>
+            alt : <a href="data/test.pdf">test.pdf</a>
         </object>
       </div>
     </div>
