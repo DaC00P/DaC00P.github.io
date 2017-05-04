@@ -69,6 +69,11 @@ a {
   overflow: hidden;
 }
 
+.tab-title-li {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
 @media (max-width: 800px) {
   .tab-link {
     font-size: .75em !important;
