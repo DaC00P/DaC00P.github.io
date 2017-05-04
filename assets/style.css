@@ -131,12 +131,13 @@ a {
   transition: all .2s ease-in-out;
 }
 
-#screenshot:hover{
+/*#screenshot:hover{
   cursor: crosshair;
   transition: all .5s ease-in-out;
   width: 50vw;
   height: auto;
-}
+  z-index: 10000;
+}*/
 
 .carousel {
   display: flex;
