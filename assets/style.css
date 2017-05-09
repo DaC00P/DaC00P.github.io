@@ -91,6 +91,7 @@ a {
 
 .mui-divider {
   background-color: black;
+  margin-bottom: 15px;
 }
 
 
@@ -128,7 +129,7 @@ a {
 }*/
 
 #screenshot {
-  width: calc(45vw - 150px);
+  width: calc(45vw - 100px);
   height: calc(45vh - 100px);
   align-self: center;
   border: 2px solid gray;
@@ -155,5 +156,17 @@ a {
   align-items: flex-end;
   width: 45vw;
   height: 45vh;
-  margin: 0 auto;
+}
+
+.mui--bg-primary {
+    background-color: #FEFFFA;
+}
+
+.control-button {
+  color: black;
+}
+
+.chef-project {
+  margin-left: 0;
+  margin-right: auto;
 }
