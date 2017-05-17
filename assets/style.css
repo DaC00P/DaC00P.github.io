@@ -174,3 +174,8 @@ a {
 .controls {
   visibility: hidden;
 }
+
+.project-title {
+  font-size: 30px;
+  font-weight: bolder;
+}
