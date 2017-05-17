@@ -68,6 +68,7 @@ a {
   overflow: hidden;
   cursor: pointer !important;
   cursor: hand !important;
+  padding-bottom: 15px !important;
 }
 
 .tab-title-li {
