@@ -1,247 +1,240 @@
 <html lang="en-us">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Daniel Cuperman</title>
-    <link rel="icon"
-          type="image/png"
-          href="assets/favicon.ico"
-    >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <link href="https://cdn.muicss.com/mui-0.9.15/css/mui.min.css" rel="stylesheet" type="text/css" />
-    <link href="./assets/style.css" rel="stylesheet" type="text/css" />
-    <script src="https://use.fontawesome.com/d57adc964d.js"></script>
-    <script src="https://cdn.muicss.com/mui-0.9.15/js/mui.min.js"></script>
-    <link rel="stylesheet" href="assets/gallery.theme.css">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<head>
+  <meta charset="UTF-8">
+  <title>Daniel Cuperman</title>
+  <link rel="icon" type="image/png" href="assets/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://cdn.muicss.com/mui-0.9.15/css/mui.min.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://use.fontawesome.com/d57adc964d.js"></script>
+  <script src="https://cdn.muicss.com/mui-0.9.15/js/mui.min.js"></script>
+  <link rel="stylesheet" href="assets/gallery.theme.css">
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-99562413-1', 'auto');
-      ga('send', 'pageview');
+    ga('create', 'UA-99562413-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- <link rel="stylesheet" href="css/gallery.min.css"> -->
+</head>
 
-    </script>
-    <!-- <link rel="stylesheet" href="css/gallery.min.css"> -->
-  </head>
+<header>
+  <div id='header-img'>
+    <div id='name'>Daniel 'Coop' Cuperman</div>
+    <div class='connect'>
+      <ul class="connect-row">
+        <li>
+          <a target='_blank' rel="noopener noreferrer" href="mailto:dacuperman@gmail.com">
+              <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a target='_blank' rel="noopener noreferrer" class="icon-linkedin" href="https://www.linkedin.com/in/danielcuperman">
+              <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a target='_blank' rel="noopener noreferrer" href="https://github.com/DaC00P">
+              <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
 
-    <header>
-        <div id='header-img'>
-          <div id='name'>Daniel 'Coop' Cuperman</div>
-          <div class='connect'>
-            <ul class="connect-row">
-              <li>
-                <a target='_blank'href="mailto:dacuperman@gmail.com">
-                  <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a target='_blank'class="icon-linkedin" href="https://www.linkedin.com/in/danielcuperman">
-                  <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a target='_blank' href="https://github.com/DaC00P">
-                  <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
+<ul class="mui-tabs__bar mui-tabs__bar--justified" id='tab-index'>
+  <li class="mui--is-active tab-title-li">
+    <a class='tab-link' data-mui-toggle="tab" data-mui-controls="pane-justified-1"><strong>About Me & My Skills</strong></a>
+  </li>
+  <li class="tab-title-li">
+    <a class='tab-link' data-mui-toggle="tab" data-mui-controls="pane-justified-2"><strong>Portfolio</strong></a>
+  </li>
+  <li class="tab-title-li">
+    <a class='tab-link' data-mui-toggle="tab" data-mui-controls="pane-justified-3"><strong>Resume</strong></a>
+  </li>
+</ul>
+
+<body>
+  <div class='mui-container mui--bg-primary main-container'>
+    <div class="mui-tabs__pane mui--is-active" id="pane-justified-1">
+      <h3 class='hello'>I'm Daniel</h3>
+      <br>
+      <br>
+      <div class="mui-row">
+        <div class="mui-col-md-6">
+          <div class='intro'>
+            <p>My first day as a QA Tester, I brought down a live server. Even before the sysadmin ran to my desk, telling me to stop whatever I was doing - while at the same time praising me for finding the oddest of recursion bugs - I had a love for breaking
+              systems. That has remained, but I also developed a powerful passion for building, architecting, and testing as a Software Engineer. I am a strong believer in collaboration, testing (and breaking) code, and problem solving. I work on the
+              entire stack, from deploying Rails to AWS Elastic Beanstalk with Devise & OAuth, to structuring and styling React components on the Front End.
+            </p>
           </div>
         </div>
-    </header>
-    <ul class="mui-tabs__bar mui-tabs__bar--justified" id='tab-index'>
-      <li class="mui--is-active tab-title-li">
-        <a class='tab-link' data-mui-toggle="tab" data-mui-controls="pane-justified-1"><strong>About Me & My Skills</strong></a>
-      </li>
-      <li class="tab-title-li">
-        <a class='tab-link' data-mui-toggle="tab" data-mui-controls="pane-justified-2"><strong>Portfolio</strong></a>
-      </li>
-      <li class="tab-title-li">
-        <a class='tab-link' data-mui-toggle="tab" data-mui-controls="pane-justified-3"><strong>Resume</strong></a>
-      </li>
-    </ul>
-
-
-  <body>
-    <div class='mui-container mui--bg-primary main-container'>
-      <div class="mui-tabs__pane mui--is-active" id="pane-justified-1">
-        <h3 class='hello'>I'm Daniel</h3>
-        <br>
-        <br>
+        <div class="mui-col-md-6">
+          <img id='profile' src='./assets/PROFILE_PIC.jpg' />
+        </div>
+        <div class="mui-col-md-12">
+          <h3 class='intro hello'>Skills & Technologies</h3>
+          <section class='intro'>
+            <span>&nbsp;Ruby</span>
+            <span class="mui--divider-left black-divider">&nbsp;Ruby on Rails</span>
+            <span class="mui--divider-left black-divider">&nbsp;RSpec + Shoulda Matchers</span>
+            <span class="mui--divider-left black-divider">&nbsp;JavaScript</span>
+            <span class="mui--divider-left black-divider">&nbsp;JQuery</span>
+            <span class="mui--divider-left black-divider">&nbsp;React.js + Redux/Flux</span>
+            <span class="mui--divider-left black-divider">&nbsp;Express.js</span>
+            <span class="mui--divider-left black-divider">&nbsp;SQL + Postgres</span>
+            <span class="mui--divider-left black-divider">&nbsp;Heroku</span>
+            <span class="mui--divider-left black-divider">&nbsp;AWS Elastic Beanstalk</span>
+            <span class="mui--divider-left black-divider">&nbsp;HTML5</span>
+            <span class="mui--divider-left black-divider">&nbsp;CSS3 + SCSS + Material UI</span>
+            <span class="mui--divider-left black-divider">&nbsp;Google Maps API</span>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="mui-tabs__pane" id="pane-justified-2">
+      <div class='portfolio'>
         <div class="mui-row">
-          <div class="mui-col-md-6">
-            <div class='intro'>
-              <p >My first day as a QA Tester, I brought down a live server. Even before the sysadmin ran to my desk, telling me to stop whatever I was doing
-                - while at the same time praising me for finding the oddest of recursion bugs - I had a love for breaking systems. That has remained,
-                but I also developed a powerful passion for building, architecting, and testing as a Software Engineer. I am a strong believer in collaboration,
-                testing (and breaking) code, and problem solving. I work on the entire stack,
-                from deploying Rails to AWS Elastic Beanstalk with Devise & OAuth, to structuring and styling React components on the Front End.
-              </p>
-            </div>
-          </div>
-          <div class="mui-col-md-6">
-              <img id='profile' src='./assets/PROFILE_PIC.jpg' />
-          </div>
-          <div class="mui-col-md-12">
-            <h3 class='intro hello'>Skills & Technologies</h3>
-            <section class='intro'>
-              <span>&nbsp;Ruby</span>
-              <span class="mui--divider-left black-divider">&nbsp;Ruby on Rails</span>
-              <span class="mui--divider-left black-divider">&nbsp;RSpec + Shoulda Matchers</span>
-              <span class="mui--divider-left black-divider">&nbsp;JavaScript</span>
-              <span class="mui--divider-left black-divider">&nbsp;JQuery</span>
-              <span class="mui--divider-left black-divider">&nbsp;React.js + Redux/Flux</span>
-              <span class="mui--divider-left black-divider">&nbsp;Express.js</span>
-              <span class="mui--divider-left black-divider">&nbsp;SQL + Postgres</span>
-              <span class="mui--divider-left black-divider">&nbsp;Heroku</span>
-              <span class="mui--divider-left black-divider">&nbsp;AWS Elastic Beanstalk</span>
-              <span class="mui--divider-left black-divider">&nbsp;HTML5</span>
-              <span class="mui--divider-left black-divider">&nbsp;CSS3 + SCSS + Material UI</span>
-              <span class="mui--divider-left black-divider">&nbsp;Google Maps API</span>
+          <div class="chef-project mui-col-md-6 portfolio-cols">
+            <span class='project-title'>ChefsTable</span>
+            <br>
+            <section class='project-details'>
+              <span>Rails, React.js, PostgreSQL</span>
+              <span class="mui--divider-left black-divider">&nbsp; </span>
+              <a target='_blank' rel="noopener noreferrer" href="https://github.com/DaC00P/tablegetter">Github</a>
+              <span class="mui--divider-left black-divider">&nbsp; </span>
+              <a target='_blank' rel="noopener noreferrer" href="https://chefstable.herokuapp.com/">Live Site</a>
+              <ul>
+                <li>Ensured dynamic & responsive rendering of all features and components using React.js with the Flux pattern.</li>
+                <li>Utilized scopes & SQL queries to create an active search based on a PostgreSQL text search.</li>
+                <li>Integrated Google Maps API as an interactive component that functions as a location-based filter.</li>
+              </ul>
             </section>
+            <div class='carousel'>
+              <div class="gallery autoplay items-2">
+                <div id="item-1" class="control-operator"></div>
+                <div id="item-2" class="control-operator"></div>
+
+                <figure class="item">
+                  <img id='screenshot' src='./assets/chefstable_ex_2.png' />
+                </figure>
+
+                <figure class="item">
+                  <img id='screenshot' src='./assets/chefstable_ex_1.png' />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="bench-project mui-col-md-6 portfolio-cols">
+            <span class='project-title'>Benchmarker</span>
+            <br>
+            <section class='project-details'>
+              <span> Node.js, React.js, Virtual Machines</span></span>
+              <span class="mui--divider-left black-divider">&nbsp;</span>
+              <a target='_blank' rel="noopener noreferrer" href="https://github.com/travisoneill/benchmark">Github</a>
+              <span class="mui--divider-left black-divider">&nbsp;</span>
+              <a target='_blank' rel="noopener noreferrer" href="https://cryptic-tundra-51153.herokuapp.com/">Live Site</a>
+              <ul>
+                <li>Created an Express,js web application and integrated a VM module to provide a standard, sanitized testing environment.</li>
+                <li>Implemented benchmarking server-side in order to offer consistency between different browsers/systems.</li>
+              </ul>
+            </section>
+            <div class='carousel'>
+              <div class="gallery autoplay items-2">
+                <div id="item-3" class="control-operator"></div>
+                <div id="item-4" class="control-operator"></div>
+                <figure class="item">
+                  <img id='screenshot' src='./assets/benchmarker_ex_2.png' />
+                </figure>
+                <figure class="item">
+                  <img id='screenshot' src='./assets/benchmarker_ex_1.png' />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mui-row">
+          <div class="sound-project mui-col-md-6 portfolio-cols">
+            <span class='project-title'>SoundsScape</span>
+            <br>
+            <section class='project-details'>
+              <span>Rails, React, Node, Project Management, Bug Tracking</span></span>
+              <span class="mui--divider-left black-divider">&nbsp;</span>
+              <a target='_blank' rel="noopener noreferrer" href="https://github.com/willyp63/SoundScape">Github</a>
+              <span class="mui--divider-left black-divider">&nbsp;</span>
+              <a target='_blank' rel="noopener noreferrer" href="http://www.soundsscape.com/">Live Site</a>
+              <ul>
+                <li>Managed project priorities, including bug tracking and feature implementation, using Trello.</li>
+                <li>Performed QA on live site in conjunction with analysis of algorithm in order to identify bugs in custom search.</li>
+              </ul>
+            </section>
+            <div class='carousel'>
+              <div class="gallery autoplay items-2">
+                <div id="item-5" class="control-operator"></div>
+                <div id="item-6" class="control-operator"></div>
+                <figure class="item">
+                  <img id='screenshot' src='./assets/soundsscape_ex_1.png' />
+                </figure>
+                <figure class="item">
+                  <img id='screenshot' src='./assets/soundsscape_ex_2.png' />
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <div class="auth-project  mui-col-md-6 portfolio-cols">
+            <span class='project-title'>Basic_Auth</span>
+            <br>
+            <section class='project-details'>
+              <span>Rails, AWS, Devise, OAuth</span>
+              <span class="mui--divider-left black-divider">&nbsp;</span>
+              <a target='_blank' rel="noopener noreferrer" href="https://github.com/DaC00P/basic_auth_app">Github</a>
+              <span class="mui--divider-left black-divider">&nbsp; </span>
+              <!-- <a href="url">Live Site</a> -->
+              <ul>
+                <li>Scaffolded a basic Ruby on Rails blogger site, then implemented Devise with Facebook OAuth and deployed to AWS Elastic Beanstalk. </li>
+                <li>Utilized Figaro for environment variable management & injection.</li>
+                <li>In development: adding Material-UI for UX and implementing HTTPS.</li>
+              </ul>
+            </section>
+            <div class='carousel'>
+              <div class="gallery autoplay items-2">
+                <div id="item-0" class="control-operator"></div>
+                <div id="item-00" class="control-operator"></div>
+                <figure class="item">
+                  <img id='screenshot' src='./assets/basicauth_ex_1.png' />
+                </figure>
+                <figure class="item">
+                  <img id='screenshot' src='./assets/basicauth_ex_1.png' />
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="mui-tabs__pane" id="pane-justified-2">
-        <div class="chef-project">
-          <span class='project-title'>ChefsTable &nbsp;</span>
-          <span class="mui--divider-left black-divider">&nbsp; Rails, React.js, PostgreSQL</span>
-          <span class="mui--divider-left black-divider">&nbsp; </span>
-          <a target='_blank' href="https://github.com/DaC00P/tablegetter">Github</a>
-          <span class="mui--divider-left black-divider">&nbsp; </span>
-          <a target='_blank' href="https://chefstable.herokuapp.com/">Live Site</a>
-          <ul>
-            <li>Ensured dynamic & responsive rendering of all features and components using React.js with the Flux pattern.</li>
-            <li>Utilized scopes & SQL queries to create an active search based on a PostgreSQL text search.</li>
-            <li>Integrated Google Maps API as an interactive component that functions as a location-based filter.</li>
-          </ul>
-          <div class='carousel'>
-            <div class="gallery autoplay items-2">
-              <div id="item-1" class="control-operator"></div>
-              <div id="item-2" class="control-operator"></div>
+    </div>
 
-              <figure class="item">
-                <img id='screenshot' src='./assets/chefstable_ex_2.png' />
-              </figure>
-
-              <figure class="item">
-                <img id='screenshot' src='./assets/chefstable_ex_1.png' />
-              </figure>
-
-              <div class="controls">
-                <a href="#item-1" class="control-button">•</a>
-                <a href="#item-2" class="control-button">•</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mui-divider"></div>
-        <div class="bench-project">
-          <span class='project-title'>Benchmarker  &nbsp;</span>
-          <span class="mui--divider-left black-divider">&nbsp; Node.js, React.js, Virtual Machines</span></span>
-          <span class="mui--divider-left black-divider">&nbsp;</span>
-          <a target='_blank' href="https://github.com/travisoneill/benchmark">Github</a>
-          <span class="mui--divider-left black-divider">&nbsp;</span>
-          <a target='_blank' href="https://cryptic-tundra-51153.herokuapp.com/">Live Site</a>
-          <ul>
-            <li>Created an  Express,js web application and integrated a VM module to provide a standard, sanitized testing environment.</li>
-            <li>Implemented benchmarking server-side in order to offer consistency between different browsers/systems.</li>
-          </ul>
-          <div class='carousel'>
-            <div class="gallery autoplay items-2">
-              <div id="item-3" class="control-operator"></div>
-              <div id="item-4" class="control-operator"></div>
-
-              <figure class="item">
-                <img id='screenshot' src='./assets/benchmarker_ex_2.png' />
-              </figure>
-
-              <figure class="item">
-                <img id='screenshot' src='./assets/benchmarker_ex_1.png' />
-              </figure>
-
-              <div class="controls">
-                <a href="#item-3" class="control-button">•</a>
-                <a href="#item-4" class="control-button">•</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mui-divider"></div>
-        <div class="sound-project">
-          <span class='project-title'>SoundsScape  &nbsp;</span>
-          <span class="mui--divider-left black-divider">&nbsp; Rails, React, Node, Project Management, Bug Tracking</span></span>
-          <span class="mui--divider-left black-divider">&nbsp;</span>
-          <a target='_blank' href="https://github.com/willyp63/SoundScape">Github</a>
-          <span class="mui--divider-left black-divider">&nbsp;</span>
-          <a target='_blank' href="http://www.soundsscape.com/">Live Site</a>
-          <ul>
-            <li>Managed project priorities, including bug tracking and feature implementation, using Trello.</li>
-            <li>Performed QA on live site in conjunction with analysis of algorithm in order to identify bugs in custom search.</li>
-          </ul>
-          <div class='carousel'>
-            <div class="gallery autoplay items-2">
-              <div id="item-5" class="control-operator"></div>
-              <div id="item-6" class="control-operator"></div>
-
-              <figure class="item">
-                <img id='screenshot' src='./assets/soundsscape_ex_1.png' />
-              </figure>
-
-              <figure class="item">
-                <img id='screenshot' src='./assets/soundsscape_ex_2.png' />
-              </figure>
-
-              <div class="controls">
-                <a href="#item-5" class="control-button">•</a>
-                <a href="#item-6" class="control-button">•</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mui-divider"></div>
-        <div class="auth-project">
-          <span class='project-title'>Basic_Auth &nbsp;</span>
-          <span class="mui--divider-left black-divider">&nbsp; Rails, AWS, Devise, OAuth</span>
-          <span class="mui--divider-left black-divider">&nbsp; </span>
-          <a target='_blank' href="https://github.com/DaC00P/basic_auth_app">Github</a>
-          <span class="mui--divider-left black-divider">&nbsp; </span>
-          <!-- <a href="url">Live Site</a> -->
-          <ul>
-            <li>Scaffolded a basic Ruby on Rails blogger site, then implemented Devise with Facebook OAuth and deployed to AWS Elastic Beanstalk. </li>
-            <li>Utilized Figaro for environment variable management & injection.</li>
-            <li>In development: adding Material-UI for UX and implementing HTTPS.</li>
-          </ul>
-          <div class='carousel'>
-            <div class="gallery autoplay items-2">
-              <div id="item-0" class="control-operator"></div>
-              <div id="item-00" class="control-operator"></div>
-
-              <figure class="item">
-                <img id='screenshot' src='./assets/basicauth_ex_1.png' />
-              </figure>
-
-              <figure class="item">
-                <img id='screenshot' src='./assets/basicauth_ex_1.png' />
-              </figure>
-
-              <div class="controls">
-                <a href="#item-0" class="control-button">•</a>
-                <a href="#item-00" class="control-button">•</a>
-              </div>
-            </div>
-          </div>
-          <div class="mui-divider"></div>
-        </div>
-      </div>
-      <div class="mui-tabs__pane" id="pane-justified-3">
-        <object data="./assets/Daniel Cuperman - Resume - 52017.pdf" width="100%" height="100%" type='application/pdf'>
+    <div class="mui-tabs__pane" id="pane-justified-3">
+      <object data="./assets/Daniel Cuperman - Resume - 52017.pdf" width="100%" height="100%" type='application/pdf'>
           <p>Sorry, the PDF couldn't be displayed :(</p>
             alt : <a href="./assets/Daniel Cuperman - Resume - 52017.pdf">CLICK FOR RESUME</a>
         </object>
-      </div>
     </div>
-  </body>
+
+  </div>
+</body>
+
 </html>

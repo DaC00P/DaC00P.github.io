@@ -1,6 +1,7 @@
 .main-container {
   padding-bottom: 10px;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 footer {
@@ -27,6 +28,8 @@ a {
    padding: 0px;
    height: 50px;
    list-style: none;
+   background-color: white;
+   border-radius: 10px;
 }
 
 .icon {
@@ -123,13 +126,9 @@ a {
   padding-top: 10px;
 }
 
-/*.screenshots {
-  align-items: center;
-}*/
-
 #screenshot {
-  width: calc(45vw - 100px);
-  height: calc(45vh - 100px);
+  width: calc(35vw - 100px);
+  height: calc(35vh - 100px);
   border: 2px solid gray;
   border-bottom: none;
   margin-bottom: none;
@@ -137,26 +136,6 @@ a {
   display: flex;
   flex-direction: column;
   transition: all .2s ease-in-out;
-}
-
-/*#screenshot:hover{
-  cursor: crosshair;
-  transition: all .5s ease-in-out;
-  width: 50vw;
-  height: auto;
-  z-index: 10000;
-}*/
-
-.carousel {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  width: 45vw;
-  height: 35vh;
-  padding-bottom: 15px;
-  padding-top: 30px;
-  overflow: hidden;
 }
 
 .mui--bg-primary {
@@ -167,16 +146,26 @@ a {
   color: black;
 }
 
-.chef-project {
-  margin-left: 0;
-  margin-right: auto;
-}
-
 .controls {
-  visibility: hidden;
+  display: none;
 }
 
 .project-title {
   font-size: 30px;
   font-weight: bolder;
+}
+
+.portfolio-cols {
+  height: 60% !important;
+  position: relative;
+}
+
+.carousel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.project-details {
+  font-size: 20px;
 }
