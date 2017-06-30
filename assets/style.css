@@ -127,11 +127,10 @@ a {
 }
 
 #screenshot {
-  width: calc(35vw - 100px);
-  height: calc(35vh - 100px);
+  width: calc(34vw - 100px);
+  height: calc(34vh - 100px);
   border: 2px solid gray;
   border-bottom: none;
-  margin-bottom: none;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
